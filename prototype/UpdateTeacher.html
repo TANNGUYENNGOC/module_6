@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    #content1 {
+        flex-basis: 100%;
+    }
+    #img{
+        width: 200px;
+        height: 250px;
+    }
+    #content2 {
+        flex-basis: 100%;
+    }
+    #content3 {
+        flex-basis: 100%;
+    }
+
+    #mg-top{
+        margin-top: 5%;
+    }
+
+    @media (min-width: 800px) {
+        #content1{
+            flex-basis: 30%;
+            text-align: center;
+        }
+        #content2{
+            flex-basis: 30%;
+        }
+        #content3{
+            flex-basis: 30%;
+        }
+        #mg-top{
+
+        }
+    }
+</style>
+<body>
+<div class="row" style="margin: 0;padding: 0">
+    <div><h2 style="padding-top: 20px" class="text-center">CHỈNH SỬA GIÁO VIÊN</h2></div>
+    <div class="col-1">
+    </div>
+    <div class="col-10 shadow p-3">
+        <form class="row " style="border-style: outset; padding: 10px">
+            <div class="col-4 text-center" id="content1">
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt=""
+                         id="img">
+                </div>
+                <div>
+                    <button id="mg-top" type="button" class="btn btn-outline-success">Chọn ảnh
+                        đại diện
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="col-4" id="content2">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tên giáo viên(<span style="color: red">*</span>)</label>
+                    <input value="Nguyễn Văn Cảnh" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label">Ngày sinh(<span
+                            style="color: red">*</span>)</label>
+                    <input value="2000-03-20" type="date" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Học vị(<span style="color: red">*</span>)</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn học vị...</option>
+                        <option value="1" selected>Thạc sĩ</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail4" class="form-label">Địa chỉ(<span
+                            style="color: red">*</span>)</label>
+                    <input value="Da Nang" type="text" class="form-control" id="exampleInputEmail4"
+                            aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="col-4" id="content3">
+                <div class="mb-3">
+                    <p>Giới tính(<span style="color: red">*</span>)</p>
+                    <div class="d-flex">
+                        <div class="form-check" style="margin-right: 10px">
+                            <input checked class="form-check-input" type="radio"  id="flexRadioDefault1" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Nam
+                            </label>
+                        </div>
+                        <div class="form-check" style="margin-right: 10px">
+                            <input class="form-check-input" type="radio"  id="flexRadioDefault2" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Nữ
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="flexRadioDefault3" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                LGBT
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail5" class="form-label">Số điện thoại(<span style="color: red">*</span>)</label>
+                    <input value="0901230007" type="text" class="form-control" id="exampleInputEmail5"
+                            aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Khoa(<span style="color: red">*</span>)</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn khoa...</option>
+                        <option value="1" selected>CNTT</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail6" class="form-label">Email(<span style="color: red">*</span>)</label>
+                    <input value="quoctrung1012@gmail.com" type="text" class="form-control" id="exampleInputEmail6"
+                            aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <div class="mg-10">
+                        <!--                            style="margin-left: 170px"-->
+                        <button type="button" class="btn btn-success " style="border-radius: 60px/80px">
+                            Lưu
+                        </button>
+                        <button type="button" class="btn btn-secondary" style="right: 0;border-radius: 60px/80px">
+                            Thoát
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</html>

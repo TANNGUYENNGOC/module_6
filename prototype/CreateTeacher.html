@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    #content1 {
+        flex-basis: 100%;
+    }
+    #img{
+        width: 200px;
+        height: 250px;
+    }
+    #content2 {
+        flex-basis: 100%;
+    }
+    #content3 {
+        flex-basis: 100%;
+    }
+
+    #mg-top{
+        margin-top: 5%;
+    }
+
+    @media (min-width: 800px) {
+        #content1{
+            flex-basis: 30%;
+            text-align: center;
+        }
+        #content2{
+            flex-basis: 30%;
+        }
+        #content3{
+            flex-basis: 30%;
+        }
+        #mg-top{
+
+        }
+    }
+</style>
+<body>
+<div class="row" style="margin: 0;padding: 0">
+    <div ><h2 style="padding-top: 20px" class="text-center">THÊM MỚI GIÁO VIÊN</h2></div>
+    <div class="col-1">
+    </div>
+    <div class="col-10 shadow p-3">
+        <form class="row " style="border-style: outset; padding: 10px">
+            <div class="col-4 text-center" id="content1">
+                <div>
+                    <img src="https://bathanh.com.vn/wp-content/uploads/2017/08/default_avatar.png" alt=""
+                         id="img">
+                </div>
+                <div>
+                    <button id="mg-top" type="button" class="btn btn-outline-success">Chọn ảnh
+                        đại diện
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="col-4" id="content2">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tên giáo viên(<span style="color: red">*</span>)</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label">Ngày sinh(<span
+                            style="color: red">*</span>)</label>
+                    <input type="date" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Học vị(<span style="color: red">*</span>)</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn học vị...</option>
+                        <option value="1">Thạc sĩ</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail4" class="form-label">Địa chỉ(<span
+                            style="color: red">*</span>)</label>
+                    <input  type="text" class="form-control" id="exampleInputEmail4"
+                           aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="col-4" id="content3">
+                <div class="mb-3">
+                    <p>Giới tính(<span style="color: red">*</span>)</p>
+                    <div class="d-flex">
+                        <div class="form-check" style="margin-right: 10px">
+                            <input class="form-check-input" type="radio"  id="flexRadioDefault1" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Nam
+                            </label>
+                        </div>
+                        <div class="form-check" style="margin-right: 10px">
+                            <input class="form-check-input" type="radio"  id="flexRadioDefault2" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Nữ
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  id="flexRadioDefault3" name="gender">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                LGBT
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail5" class="form-label">Số điện thoại(<span style="color: red">*</span>)</label>
+                    <input  type="text" class="form-control" id="exampleInputEmail5"
+                           aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Khoa(<span style="color: red">*</span>)</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn khoa...</option>
+                        <option value="1" >CNTT</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail6" class="form-label">Email(<span style="color: red">*</span>)</label>
+                    <input  type="text" class="form-control" id="exampleInputEmail6"
+                           aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <div class="mg-10">
+                        <!--                            style="margin-left: 170px"-->
+                        <button type="button" class="btn btn-success " style="border-radius: 60px/80px">
+                            Lưu
+                        </button>
+                        <button type="button" class="btn btn-secondary" style="right: 0;border-radius: 60px/80px">
+                            Thoát
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</html>
