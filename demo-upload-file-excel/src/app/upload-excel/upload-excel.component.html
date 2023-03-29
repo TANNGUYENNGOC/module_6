@@ -1,0 +1,12 @@
+<input type="file" (change)="onFileChange($event)">
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+  </tr>
+  <tr *ngFor="let data of data">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+  </tr>
+</table>

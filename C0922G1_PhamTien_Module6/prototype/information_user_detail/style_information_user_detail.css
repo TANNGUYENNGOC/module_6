@@ -1,0 +1,41 @@
+#content{
+    flex-basis: 100%;
+    text-align: center;
+}
+#content1{
+    flex-basis: 100%;
+}
+#content2{
+    flex-basis: 100%;
+}
+h2{
+    text-align: center;
+    padding: 0 0 30px 0;
+    color: #14a2b8;
+}
+.red{
+    color: red;
+}
+#layout{
+   margin-top: 80px
+}
+.picture{
+    color: #14a2b8;
+}
+.form-label{
+    font-weight: bold;
+
+}
+
+/*màn hình điện thoại*/
+@media (min-width: 880px) {
+    #content{
+        flex-basis: 30%;
+    }
+    #content1{
+        flex-basis: 60%;
+    }
+    #content2{
+        flex-basis: 30%;
+    }
+}
